@@ -1,0 +1,64 @@
+// Variables de la charte graphique de la region Auvergne-Rhone-Alpes
+$primary: #0074c7;
+$secondary: #384050;
+$light: #f1f8fc;
+$danger: #cd2c2e;
+$success: #82b864;
+
+// On surcharge les variables CSS de Bootstrap (deja importe en CSS compile
+// dans layout.js) plutot que de recompiler tout Bootstrap en Sass.
+:root {
+  --bs-primary: #{$primary};
+  --bs-primary-rgb: 0, 116, 199;
+  --bs-secondary: #{$secondary};
+  --bs-danger: #{$danger};
+  --bs-success: #{$success};
+  --bs-light: #{$light};
+  --bs-font-sans-serif: "Graphik", Arial, Helvetica, sans-serif;
+}
+
+.w-66 {
+  width: 66% !important;
+}
+
+body {
+  background-color: #ffffff;
+  color: $secondary;
+  font-family: var(--bs-font-sans-serif);
+}
+
+.section-title {
+  display: inline-block;
+  margin-bottom: 24px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: $primary;
+    margin-top: 4px;
+  }
+}
+
+.artisan-card {
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.star-rating {
+  color: $primary;
+}
+
+footer {
+  background-color: $secondary;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+  }
+}
