@@ -13,6 +13,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
+// Page fiche d'un artisan
 export default async function FicheArtisan({ params }) {
   const { id } = await params;
   const artisan = await getArtisanParId(id);

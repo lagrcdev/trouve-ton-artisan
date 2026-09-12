@@ -5,6 +5,7 @@ import { envoyerMessageContact } from "@/lib/actions";
 
 const etatInitial = { succes: false, erreur: null };
 
+// Formulaire de contact d'un artisan
 export default function ContactForm({ idArtisan }) {
   const [etat, action, enCours] = useActionState(envoyerMessageContact, etatInitial);
 

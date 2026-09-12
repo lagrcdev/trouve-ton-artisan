@@ -6,6 +6,7 @@ export const metadata = {
   description: "La page que vous cherchez n'existe pas.",
 };
 
+// Page 404
 export default function NotFound() {
   return (
     <div className="container py-5 text-center">

@@ -13,6 +13,7 @@ export default function Footer() {
           <br />
           <a href="tel:+33426734000">+33 (0)4 26 73 40 00</a>
         </address>
+        {/* Liens des pages legales */}
         <nav aria-label="Liens légaux">
           <ul className="list-unstyled mb-0">
             <li>
