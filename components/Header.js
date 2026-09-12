@@ -6,7 +6,7 @@ const categories = ["Bâtiment", "Services", "Fabrication", "Alimentation"];
 export default function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-md bg-white border-bottom py-1">
+      <nav className="navbar navbar-expand-md bg-white border-bottom py-1" aria-label="Menu principal">
         <div className="container-fluid px-5">
           <Link href="/" className="navbar-brand">
             <Image

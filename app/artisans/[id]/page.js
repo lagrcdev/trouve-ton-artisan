@@ -29,12 +29,14 @@ export default async function FicheArtisan({ params }) {
           <StarRating note={artisan.note} />
         </p>
         <p className="mb-1 text-muted">{artisan.specialty}</p>
-        <p className="mb-3 text-muted">📍 {artisan.location}</p>
+        <p className="mb-3 text-muted">
+          <span aria-hidden="true">📍</span> {artisan.location}
+        </p>
 
         {artisan.website && (
           <p>
             <a href={artisan.website} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              🌐 Voir le site web
+              <span aria-hidden="true">🌐</span> Voir le site web (nouvel onglet)
             </a>
           </p>
         )}

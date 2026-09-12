@@ -11,7 +11,9 @@ export default function ArtisanCard({ artisan }) {
             <StarRating note={artisan.note} />
           </p>
           <p className="mb-1 text-muted fw-bold">{artisan.specialty}</p>
-          <p className="mb-0 text-muted">📍 {artisan.location}</p>
+          <p className="mb-0 text-muted">
+            <span aria-hidden="true">📍</span> {artisan.location}
+          </p>
         </div>
       </div>
     </Link>

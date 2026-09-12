@@ -12,6 +12,8 @@ export default async function Home() {
 
   return (
     <div className="container py-4">
+      <h1 className="visually-hidden">Trouve ton artisan en Auvergne-Rhône-Alpes</h1>
+
       <section className="mb-5">
         <h2 className="section-title h4 fw-bold">Comment trouver mon artisan ?</h2>
         <ol className="list-unstyled ps-5">
