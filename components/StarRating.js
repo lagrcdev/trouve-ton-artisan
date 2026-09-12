@@ -9,7 +9,7 @@ export default function StarRating({ note }) {
   }
 
   return (
-    <span className="star-rating" aria-label={`Note : ${note} sur 5`}>
+    <span className="star-rating" role="img" aria-label={`Note : ${note} sur 5`}>
       {etoiles.join(" ")} ({note})
     </span>
   );
