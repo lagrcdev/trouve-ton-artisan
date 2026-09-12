@@ -1,3 +1,22 @@
+// Police de la charte graphique (fichiers dans public/fonts)
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik-Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
 // Variables de la charte graphique de la region Auvergne-Rhone-Alpes
 $primary: #0074c7;
 $primary-dark: #00497c;

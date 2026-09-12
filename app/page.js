@@ -5,7 +5,8 @@ import ArtisanCard from "@/components/ArtisanCard";
 const etapes = [
   { numero: 1, texte: "Choisissez une catégorie dans le menu" },
   { numero: 2, texte: "Sélectionnez un artisan" },
-  { numero: 3, texte: "Contactez-le via le formulaire de contact (réponse sous 48h)" },
+  { numero: 3, texte: "Contactez-le via le formulaire de contact" },
+  { numero: 4, texte: "Une réponse vous sera apportée sous 48h" },
 ];
 
 // Page d'accueil
