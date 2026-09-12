@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Illustration d'une loupe indiquant une page introuvable">
+  <circle cx="85" cy="85" r="55" fill="none" stroke="#0074c7" stroke-width="10" />
+  <line x1="125" y1="125" x2="170" y2="170" stroke="#0074c7" stroke-width="12" stroke-linecap="round" />
+  <line x1="60" y1="60" x2="110" y2="110" stroke="#cd2c2e" stroke-width="8" stroke-linecap="round" />
+  <line x1="110" y1="60" x2="60" y2="110" stroke="#cd2c2e" stroke-width="8" stroke-linecap="round" />
+</svg>
