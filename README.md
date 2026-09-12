@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trouve ton artisan
 
-## Getting Started
+Site pour trouver un artisan en région Auvergne-Rhône-Alpes, fait avec Next.js et Bootstrap.
 
-First, run the development server:
+## Prérequis
+
+- Node.js (version 18 ou plus)
+- npm
+
+## Installation
+
+```bash
+npm install
+```
+
+## Lancer le site en local
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Puis ouvrir [http://localhost:3000](http://localhost:3000) dans le navigateur.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Envoi des messages de contact (optionnel)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Le formulaire de contact envoie les emails via MailDev, un faux serveur mail pour tester en local (aucun vrai email n'est envoyé).
 
-## Learn More
+Dans un autre terminal :
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run mail
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Puis ouvrir [http://localhost:1080](http://localhost:1080) pour voir les emails reçus.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build de production
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm run start
+```
