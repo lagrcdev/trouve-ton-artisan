@@ -12,6 +12,13 @@ export default function ContactForm({ idArtisan }) {
     <form action={action}>
       <input type="hidden" name="idArtisan" value={idArtisan} />
 
+      {/* Piege a robots : invisible pour un humain (aria-hidden + hors ecran),
+          seul un robot qui remplit tous les champs automatiquement le remplira. */}
+      <div style={{ position: "absolute", left: "-9999px" }} aria-hidden="true">
+        <label htmlFor="siteweb2">Ne pas remplir ce champ</label>
+        <input type="text" id="siteweb2" name="siteweb2" tabIndex="-1" autoComplete="off" />
+      </div>
+
       {etat.succes && <p className="text-success">Votre message a bien été envoyé.</p>}
       {etat.erreur && <p className="text-danger">{etat.erreur}</p>}
 
