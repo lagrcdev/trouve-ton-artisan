@@ -14,9 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
             <body>
+        <a href="#contenu-principal" className="visually-hidden-focusable">
+          Aller au contenu principal
+        </a>
         <BootstrapClient />
         <Header />
-        <main>{children}</main>
+        <main id="contenu-principal">{children}</main>
         <Footer />
       </body>
 
