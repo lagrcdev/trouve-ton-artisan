@@ -21,10 +21,22 @@ $success: #82b864;
   width: 66% !important;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #ffffff;
   color: $secondary;
   font-family: var(--bs-font-sans-serif);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .section-title {
