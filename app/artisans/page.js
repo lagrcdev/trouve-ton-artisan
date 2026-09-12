@@ -32,12 +32,15 @@ export default async function ListeArtisans({ searchParams }) {
       {artisans.length === 0 ? (
         <p>Aucun artisan ne correspond à votre recherche.</p>
       ) : (
-        <div className="row g-3">
-          {artisans.map((artisan) => (
-            <div className="col-12 col-md-4" key={artisan.id}>
-              <ArtisanCard artisan={artisan} />
-            </div>
-          ))}
+        <div>
+          <h2 className="visually-hidden">Liste des artisans</h2>
+          <div className="row g-3">
+            {artisans.map((artisan) => (
+              <div className="col-12 col-md-4" key={artisan.id}>
+                <ArtisanCard artisan={artisan} />
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>
