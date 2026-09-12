@@ -7,6 +7,7 @@ export default function ArtisanCard({ artisan }) {
     <Link href={`/artisans/${artisan.id}`} className="text-decoration-none text-reset">
       <div className="card artisan-card h-100 shadow-sm">
         <div className="card-body">
+          {artisan.top && <span className="badge bg-success mb-2">Artisan du mois</span>}
           <h3 className="h5 fw-bold">{artisan.name}</h3>
           <p className="mb-1">
             <StarRating note={artisan.note} />

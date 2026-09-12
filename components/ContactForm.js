@@ -23,21 +23,24 @@ export default function ContactForm({ idArtisan }) {
       {etat.succes && <p className="text-success">Votre message a bien été envoyé.</p>}
       {etat.erreur && <p className="text-danger">{etat.erreur}</p>}
 
+      <p className="small text-muted">
+        <span className="text-danger">*</span> champs obligatoires
+      </p>
       <div className="mb-3">
         <label htmlFor="nom" className="form-label">
-          Votre nom
+          Votre nom <span className="text-danger">*</span>
         </label>
         <input type="text" className="form-control" id="nom" name="nom" required />
       </div>
       <div className="mb-3">
         <label htmlFor="objet" className="form-label">
-          Objet
+          Objet <span className="text-danger">*</span>
         </label>
         <input type="text" className="form-control" id="objet" name="objet" required />
       </div>
       <div className="mb-3">
         <label htmlFor="message" className="form-label">
-          Votre message
+          Votre message <span className="text-danger">*</span>
         </label>
         <textarea className="form-control" id="message" name="message" rows="4" required></textarea>
       </div>
