@@ -1,5 +1,6 @@
 // Variables de la charte graphique de la region Auvergne-Rhone-Alpes
 $primary: #0074c7;
+$primary-dark: #00497c;
 $secondary: #384050;
 $light: #f1f8fc;
 $danger: #cd2c2e;
@@ -12,7 +13,9 @@ $success: #82b864;
   --bs-primary-rgb: 0, 116, 199;
   --bs-secondary: #{$secondary};
   --bs-danger: #{$danger};
+  --bs-danger-rgb: 205, 44, 46;
   --bs-success: #{$success};
+  --bs-success-rgb: 130, 184, 100;
   --bs-light: #{$light};
   --bs-font-sans-serif: "Graphik", Arial, Helvetica, sans-serif;
 }
@@ -64,6 +67,17 @@ main {
 
 .star-rating {
   color: $primary;
+}
+
+// Couleur au survol des liens du menu et des boutons principaux
+.nav-link:hover {
+  color: $primary-dark !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: $primary-dark;
+  border-color: $primary-dark;
 }
 
 footer {
