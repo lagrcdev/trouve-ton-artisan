@@ -1,12 +1,14 @@
 import { getArtisansDuMois } from "@/lib/artisans";
 import ArtisanCard from "@/components/ArtisanCard";
 
+// Etapes affichees sur l'accueil
 const etapes = [
   { numero: 1, texte: "Choisissez une catégorie dans le menu" },
   { numero: 2, texte: "Sélectionnez un artisan" },
   { numero: 3, texte: "Contactez-le via le formulaire de contact (réponse sous 48h)" },
 ];
 
+// Page d'accueil
 export default async function Home() {
   const artisansDuMois = await getArtisansDuMois();
 

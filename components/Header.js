@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+// Categories affichees dans le menu
 const categories = ["Bâtiment", "Services", "Fabrication", "Alimentation"];
 
 export default function Header() {
@@ -45,6 +46,7 @@ export default function Header() {
         </div>
       </nav>
       <div className="container-fluid px-5 py-2">
+        {/* Barre de recherche */}
         <form action="/artisans" method="get" role="search" className="w-66 mx-auto">
           <div className="input-group">
             <input

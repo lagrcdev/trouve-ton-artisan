@@ -1,6 +1,7 @@
 import Link from "next/link";
 import StarRating from "./StarRating";
 
+// Carte d'un artisan (utilisee dans les listes et l'accueil)
 export default function ArtisanCard({ artisan }) {
   return (
     <Link href={`/artisans/${artisan.id}`} className="text-decoration-none text-reset">

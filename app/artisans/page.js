@@ -6,6 +6,7 @@ export const metadata = {
   description: "Consultez la liste des artisans de la région Auvergne-Rhône-Alpes par catégorie ou recherche.",
 };
 
+// Page liste des artisans : par categorie ou par recherche selon l'url
 export default async function ListeArtisans({ searchParams }) {
   const params = await searchParams;
   const categorie = params?.category;
